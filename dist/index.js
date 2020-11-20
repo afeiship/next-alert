@@ -3,7 +3,7 @@
  * description: Alert for debug detect platform.
  * homepage: https://github.com/afeiship/next-alert
  * version: 1.0.0
- * date: 2020-11-20 18:40:01
+ * date: 2020-11-20 18:40:42
  * license: MIT
  */
 
