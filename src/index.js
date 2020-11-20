@@ -1,11 +1,11 @@
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var options = {
     type: 'info',
     indent: 2,
     isMobile: function () {
-      return 'ontouchstart' in document.documentElement
+      return 'ontouchstart' in document.documentElement;
     }
   };
 
@@ -13,8 +13,8 @@
     var args = nx.slice(arguments);
     if (options.isMobile()) {
       var argRes = args.map(function (arg) {
-        return JSON.stringify(arg, null, options.indent)
-      })
+        return JSON.stringify(arg, null, options.indent);
+      });
       alert(argRes.join('\n\n'));
     } else {
       console[options.type].apply(console, arguments);
